@@ -1,44 +1,168 @@
-Evolv Privacy Policy
-Last updated: 06-17-2026
+# Evolv Privacy Policy
 
-Evolv ("the app," "we," "our") is a weight loss and health journey tracking app. This policy explains what information Evolv collects, how it's used, and the choices you have. We wrote this in plain language because we believe a health app's privacy policy should be as easy to read as the app itself.
+Last updated: 06-20-2026
 
-The short version
-Evolv is built local-first. Your photos, weight history, health data, and journal entries live on your device. Nothing leaves your phone automatically. The only time any of your data is sent anywhere is when you explicitly choose to use the AI Insights feature or the Medical Export feature, and both require your direct action and confirmation before anything is sent.
+Evolv (“the app,” “we,” “our”) is a visual weight-loss and health journey tracking app. This Privacy Policy explains what information Evolv stores, what information may be sent when you use optional AI features, and the choices you have.
 
-What Evolv collects and stores on your device
-When you use Evolv, the following information is stored locally on your device using Apple's on-device storage:
+We wrote this in plain language because a health app’s privacy policy should be easy to understand.
 
-Progress photos you take or import
-Weight entries
-Health data you choose to sync from Apple Health, including steps, sleep, resting heart rate, blood pressure, and protein intake
-Medication and peptide tracking information you enter, including dose logs, side effects, and notes
-Check-in details such as hunger and food noise ratings
-Profile information you provide, such as age, biological sex, or goal weight, if entered
-This information is not visible to us. We do not have a server that stores your photos, your weight history, or your day-to-day entries. It stays on your device and in your iCloud backup if you have that enabled through Apple, the same as any other app data on your phone.
+## The short version
 
-Apple Health
-If you grant Evolv access to Apple Health, we read only the specific data types you approve, such as steps, sleep, resting heart rate, blood pressure, and protein. Apple manages these permissions, and you can review or revoke them at any time in the Settings app under Privacy & Security > Health. Evolv does not write data back to Apple Health except for the data types you've explicitly enabled syncing for, if applicable.
+Evolv is built local-first.
 
-AI Insights feature
-Evolv includes an optional AI Insights feature. When you tap to generate an Insight, Evolv prepares a summary of your numeric and text data — such as recent weight trends, sleep averages, step counts, and notes you've written — and asks for your confirmation before sending it. No photos are ever included in this data package.
+Your progress photos, weight history, check-ins, HealthKit-derived data, medication or peptide tracking information, and saved insights are stored on your device. Evolv does not automatically upload your photos, daily entries, Medical Export files, or full history to our servers.
 
-If you confirm, that summary is sent to our backend server, which forwards it to a third-party AI provider to generate a response. The response is returned to your device and displayed in the app. We do not store this data on our server beyond what's needed to process the request and return a response to you. Your data is not used to train AI models.
+The main time selected data leaves your device is when you choose to generate an AI Insight. When you do that, Evolv sends a minimized summary snapshot to our backend so an AI-generated insight can be created. Progress photos, image data, email, freeform notes, detailed symptom notes, raw Apple Health samples, and Medical Export PDFs are not sent to the AI endpoint.
 
-You can use Evolv fully without ever using this feature. It is entirely optional and requires your explicit action and confirmation every time.
+## Information stored on your device
 
-Medical Export feature
-Evolv includes a Medical Export feature that prepares a plain-text summary of your data, intended for use with an AI assistant of your choosing or for a clinician visit. This export is shown to you for review before anything happens. Evolv does not send this export anywhere automatically — you choose to copy it and paste it into whatever tool or context you prefer. We have no visibility into what you do with it after you copy it.
+When you use Evolv, the following information may be stored locally on your device using Apple’s on-device storage:
 
-Data you delete
-If you delete an entry, photo, or your account data within the app, that information is removed from your device. Since we don't store a copy of your personal health data on our servers, there is nothing further for us to delete on our end beyond the limited request logs described above, which are not linked to your identity.
+* Progress photos you take or import
+* Weight entries and progress history
+* Check-in information, such as hunger, food noise, energy, protein, and structured side-effect selections
+* Medication or peptide tracking information you choose to enter, such as medication names, routes, dose amounts, schedules, and dose logs
+* Health data you choose to sync from Apple Health, such as steps, sleep, resting heart rate, blood pressure, weight, and protein intake
+* Profile or tracking preferences you enter, such as goal weight or tracking settings
+* Saved AI insights generated for you
+* App security settings, such as app lock preferences
 
-Children's privacy
-Evolv is not directed at children under 13, and we do not knowingly collect data from children under 13.
+This information is stored locally on your device. It may also be included in your device backup or iCloud backup depending on your Apple settings. Apple controls those backup settings.
 
-Changes to this policy
-If we make material changes to this policy, we will update the "Last updated" date above and, where appropriate, notify you within the app.
+## Apple Health
 
-Contact
-If you have questions about this privacy policy or how Evolv handles your data, contact us at: c.cisneros45@gmail.com
-https://ccisneros45-crypto.github.io/evolv-legal/
+If you grant Evolv access to Apple Health, Evolv reads only the HealthKit categories you approve. These may include weight, steps, sleep, resting heart rate, blood pressure, and protein intake.
+
+You can review or revoke Health access at any time in the iPhone Settings app under:
+
+Privacy & Security > Health > Evolv
+
+Evolv uses HealthKit-derived data to help show your progress and, if you choose to generate an AI Insight, to include summarized wellness context. Evolv does not send raw Apple Health samples to the AI endpoint.
+
+## Progress photos
+
+Progress photos are stored on your device. Evolv may store photo data locally in the app and may create local thumbnails or widget images for app features.
+
+Progress photos, image data, and raw photo files are not sent to the Evolv backend or to the AI service for AI Insights.
+
+If you use sharing features, such as a progress comparison image or timelapse, Evolv may create a temporary image or video file on your device. That file leaves your device only when you choose to share or save it.
+
+## AI Insights
+
+Evolv includes an optional AI Insights feature. When you choose to generate an AI Insight, Evolv prepares a minimized structured snapshot from selected progress data.
+
+This snapshot may include:
+
+* Weight values, dates, and trend summaries
+* Structured check-in values, such as hunger, food noise, energy, protein, and selected side effects
+* Medication or peptide tracking context if you enabled those features
+* Dose log dates and structured dosing information if entered
+* Summarized HealthKit-derived values, such as step, sleep, weight, protein, heart rate, or blood pressure summaries when available
+* App-generated progress context and trend summaries
+
+The AI snapshot does not include:
+
+* Progress photos
+* Image data
+* Raw photo files
+* Email address
+* Freeform notes
+* Detailed symptom notes
+* Raw Apple Health samples
+* Medical Export PDFs
+* Face ID, Touch ID, or biometric data
+* The App Attest private key
+* Any OpenAI API key
+
+When you generate an AI Insight, the minimized snapshot is sent to the Evolv backend. The Evolv backend sends the minimized snapshot content to OpenAI’s API to generate the AI response. The generated response is returned to your device and displayed in the app.
+
+Evolv does not intentionally store AI request snapshots or AI responses on our backend. AI request snapshots are processed transiently to generate the response.
+
+AI Insights are optional. You can use Evolv without generating AI Insights.
+
+## AI output is not medical advice
+
+AI Insights are informational only. They are not medical advice, diagnosis, or treatment. Evolv does not determine medication effectiveness, diagnose side effects, recommend dosing, or replace a licensed clinician.
+
+You should review health concerns, medication questions, side effects, or treatment decisions with a qualified healthcare professional.
+
+## Medical Export
+
+Evolv includes a Medical Export feature that creates a provider-friendly summary on your device. This export is intended to help you review your tracked information or share it with a clinician if you choose.
+
+Medical Export files are generated locally. Evolv does not automatically send Medical Export files to our backend, OpenAI, or any third party.
+
+A Medical Export leaves your device only when you choose to share, save, copy, or export it using iOS sharing tools.
+
+By default, Medical Export excludes email, photos, raw Apple Health samples, and detailed notes unless the app specifically gives you an option and you choose to include additional information.
+
+## App Attest and backend security
+
+Evolv uses Apple App Attest to help verify that requests to the Evolv backend are coming from a valid copy of the app. This helps protect the AI backend from unauthorized access.
+
+For App Attest, Evolv may store or process:
+
+* App Attest challenge records
+* App Attest key identifiers
+* Public key verification data
+* Sign count and environment metadata
+* Short-lived session tokens used to authorize AI Summary requests
+
+The App Attest private key is managed by Apple’s system services and is not exported by the app.
+
+## Backend processing and retention
+
+The Evolv backend is used for AI Insight generation and App Attest verification.
+
+The backend does not intentionally store:
+
+* AI request snapshots
+* AI responses
+* Progress photos
+* Medical Export files
+* Raw Apple Health samples
+* Weight history as a user database
+* Medication or check-in history as a user database
+
+The backend stores App Attest security records used to verify app requests and prevent replay or unauthorized access.
+
+Render or other infrastructure providers may keep operational logs such as endpoint paths, timestamps, status codes, and service health information. Evolv’s custom backend logs are designed not to include AI snapshot contents, OpenAI raw responses, authorization tokens, App Attest assertions, attestation objects, or API keys.
+
+## OpenAI API
+
+Evolv uses OpenAI’s API as a service provider to generate AI Insights. The OpenAI API key is stored on the Evolv backend and is not included in the iOS app.
+
+Based on our current OpenAI API use and settings, AI request data sent through the OpenAI API is not used to train OpenAI models by default unless data sharing is explicitly enabled. This may be subject to OpenAI’s current API terms and settings.
+
+## Data you delete
+
+If you delete an entry, photo, or tracked information in Evolv, that information is removed from the app’s local storage on your device.
+
+Because Evolv does not intentionally store your AI snapshots, AI responses, photos, weight history, or daily tracking history on our backend, there is generally no server-side copy of that app data for us to delete.
+
+Some local data may remain in your iCloud backup or device backup depending on your Apple settings.
+
+## Your choices
+
+You can:
+
+* Use Evolv without enabling Apple Health access
+* Use Evolv without generating AI Insights
+* Revoke Health access in iPhone Settings
+* Delete entries or photos in the app
+* Choose whether to share Medical Export files
+* Delete the app from your device to remove locally stored app data, subject to Apple backup behavior
+
+## Children’s privacy
+
+Evolv is not directed to children under 13. We do not knowingly collect personal information from children under 13.
+
+## Changes to this policy
+
+We may update this Privacy Policy as Evolv changes. If we make material changes, we will update the “Last updated” date above and, where appropriate, notify users in the app.
+
+## Contact
+
+If you have questions about this Privacy Policy or how Evolv handles data, contact us at:
+
+[c.cisneros45@gmail.com](mailto:c.cisneros45@gmail.com)
