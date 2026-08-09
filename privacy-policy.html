@@ -35,7 +35,7 @@
 
       <section class="callout">
         <h2>The short version</h2>
-        <p>Evolv is local-first. Your journal, progress photos, detailed Health data, medication and peptide records, drink history, check-ins, and saved insights are stored on your device. They are not automatically uploaded to an Evolv account.</p>
+        <p>Evolv is local-first and uses your private iCloud account for optional recovery across your Apple devices. Your journal, progress photos, medication and peptide records, drink history, check-ins, and saved insights are not uploaded to an Evolv account or used for advertising. Detailed Apple Health records remain under Apple’s Health and iCloud controls.</p>
         <p>Data leaves your device only for features you choose, such as Sign in with Apple, AI Insights, Apple Weather, App Attest, or sharing an export. AI requests use a minimized summary and never include progress photos, freeform notes, custom drink names, raw HealthKit samples, or Medical Export files.</p>
       </section>
 
@@ -49,7 +49,7 @@
         <li>Health data you authorize Evolv to read, including supported weight, nutrition, activity, sleep, heart-rate, workout, and blood-pressure information;</li>
         <li>saved AI Insights, app preferences, notification settings, and app-lock settings.</li>
       </ul>
-      <p>Evolv does not use CloudKit to sync this journal. Apple controls device backups and Apple Health storage. Protect your device and backups using Apple’s security settings.</p>
+      <p>When iCloud is available, Evolv uses Apple CloudKit in your private iCloud database to recover and synchronize the journal across your compatible Apple devices. This can include progress photos and thumbnails, weights, goals, journey entries, check-ins, hydration and workout logs, medication and peptide records, achievements, saved Health summaries, and app preferences. Evolv cannot use this private CloudKit data for advertising. If iCloud is unavailable, Evolv falls back to local storage so the journal remains usable; recovery may remain paused until iCloud is available again. Apple controls iCloud account security, storage, and device backups.</p>
 
       <h2>Apple Health</h2>
       <p>If you grant permission, Evolv reads only the Apple Health categories you approve. The app uses this information locally to build daily summaries, show progress, match measurements to journey entries, populate Insights and exports, and prepare minimized AI context when you request an AI Insight.</p>
@@ -57,7 +57,7 @@
       <p>Evolv does not use Health data for advertising, data brokerage, or cross-app tracking. You can review or revoke Health permissions in Apple Health or iPhone Settings at any time.</p>
 
       <h2>Progress photos and media</h2>
-      <p>Progress photos and derived thumbnails remain on your device and are not sent to Evolv’s backend or the AI provider. If you save media to Photos or share a comparison, timelapse, recap, achievement, or export, the selected content leaves Evolv only through the destination you choose.</p>
+      <p>Progress photos and derived thumbnails remain on your Apple devices and may synchronize through your private iCloud database when iCloud recovery is available. They are not sent to Evolv’s backend or the AI provider. If you save media to Photos or share a comparison, timelapse, recap, achievement, or export, the selected content leaves Evolv only through the destination you choose.</p>
 
       <h2>Location and Apple Weather</h2>
       <p>With optional When In Use location permission, Evolv requests a coarse current location (approximately three-kilometer accuracy) to obtain local weather from Apple Weather and adjust hydration guidance. Evolv caches the resulting temperature, humidity, forecast context, and Apple Weather attribution locally for up to three hours. Evolv does not send your location to the Evolv backend or include it in AI requests.</p>
@@ -68,6 +68,10 @@
       <h2>Optional Evolv account and Sign in with Apple</h2>
       <p>You may create an Evolv account using Sign in with Apple to access connected features such as AI Insights. Evolv’s backend receives Apple’s sign-in credential and may store an Apple-linked account identifier, your email address and display name if Apple provides them, account creation information, session records, plan and entitlement status, and feature-usage limits. The app stores its session token in the iOS Keychain.</p>
       <p>Creating an account does not upload your local journal, photos, raw Health data, medication history, drink history, or exports. Signing out ends the local session but does not erase your on-device journal.</p>
+
+      <h2>App Store purchases and subscriptions</h2>
+      <p>If you purchase Evolv Plus, Apple processes the payment through your Apple Account. Evolv uses StoreKit transaction information such as product identifier, subscription status, expiration, revocation, and original transaction identifier to unlock features, restore purchases, prevent abuse, and enforce feature allowances. Evolv does not receive your full payment-card or Apple Account credentials.</p>
+      <p>Subscription status may be stored on your device and, for server-backed features such as AI usage allowances, associated with your optional Evolv account on the backend. You can manage or cancel subscriptions in your Apple Account settings and restore eligible purchases in Evolv.</p>
 
       <h2>AI Insights</h2>
       <p>AI Insights are optional and run only when you request one. Evolv prepares a compact structured snapshot that may contain dates, weight and trend summaries, structured check-in values, summarized Health-derived values, and structured medication or dose context you chose to record. The snapshot is sent to Evolv’s backend, which sends it to OpenAI’s API to generate the response.</p>
@@ -97,7 +101,7 @@
       <p>Evolv does not sell your personal information, show third-party advertising, use advertising identifiers, or track you across other companies’ apps and websites.</p>
 
       <h2>Retention and deletion</h2>
-      <p>Your local journal remains until you delete entries, delete the app, or erase the device data. Apple Health records remain under Apple Health’s controls.</p>
+      <p>Your local journal remains until you delete entries, delete the app, or erase the device data. When iCloud recovery is enabled, synchronized records may remain in your private iCloud database and on other connected devices until removed through Evolv or your Apple iCloud controls. Apple Health records remain under Apple Health’s controls.</p>
       <p>Backend account, entitlement, security, session, and usage records are retained while needed to provide and secure connected services and meet legal obligations. You can permanently delete your Evolv account from the account settings in the app. Account deletion removes the Evolv account, server sessions, AI access record, and backend usage history. It does not delete your local journal or Apple Health data; remove those separately on your device.</p>
       <p>Operational logs may persist for a limited period in service-provider systems for security and reliability. Data may be retained longer when required by law, to resolve disputes, or to prevent fraud and abuse.</p>
 
@@ -107,7 +111,8 @@
         <li>Turn Apple Health drink writing, weather access, reminders, widgets, and app lock on or off.</li>
         <li>Use Evolv’s local features without generating AI Insights.</li>
         <li>Sign out of or permanently delete your optional Evolv account in the app.</li>
-        <li>Delete local entries or uninstall Evolv to remove its local app data.</li>
+        <li>Manage Evolv’s iCloud access in Apple Settings and delete local or synchronized entries using Evolv and Apple’s iCloud controls.</li>
+        <li>Manage or cancel Evolv Plus in your Apple Account subscription settings.</li>
       </ul>
 
       <h2>Children</h2>
